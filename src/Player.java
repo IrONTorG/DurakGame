@@ -14,4 +14,12 @@ class Player {
         hand.add(card);
     }
 
+    public void Status (){
+        System.out.println(); //вывод инфы о картах в руке, кол-ве
+    }
+
+    public int getHand(){
+        return hand.size();
+    }
+
 }

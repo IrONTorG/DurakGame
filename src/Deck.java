@@ -25,7 +25,13 @@ class Deck {
         Collections.shuffle(cards);
     }
 
-    
+    public Card getCard() {
+        if (!cards.empty()) {
+            return cards.pop();
+        }
+        return null;                          //kalashk
+
+    }
 
 
 }
