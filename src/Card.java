@@ -7,6 +7,11 @@ class Card {
         this.rank = rank;
     }
 
+    public String stringName(){
+        return this.getRankString() + " OF " + this.getSuitString();
+    }
+
+
     public Rank getRank() {
         return rank;
     }
@@ -46,6 +51,62 @@ class Card {
             }
             default -> {
                 return 0;
+            }
+
+        }
+    }
+
+    public String getSuitString() {
+        switch (this.suit) {
+            case SPADE -> {
+                return "SPADE";
+            }
+            case HEART -> {
+                return "HEART";
+            }
+            case DIAMOND -> {
+                return "DIAMOND";
+            }
+            case CLUB -> {
+                return "CLUB";
+            }
+            default -> {
+                return "UNKNOWN";
+            }
+        }
+    }
+
+    public String getRankString(){
+        switch (this.rank){
+            case SIX -> {
+                return "SIX";
+            }
+            case SEVEN -> {
+                return "SEVEN";
+            }
+            case EIGHT -> {
+                return "EIGHT";
+            }
+            case NINE -> {
+                return "NINE";
+            }
+            case TEN -> {
+                return "TEN";
+            }
+            case JACK  -> {
+                return "JACK";
+            }
+            case QUEEN -> {
+                return "QUEEN";
+            }
+            case KING -> {
+                return "KING";
+            }
+            case ACE -> {
+                return "ACE";
+            }
+            default -> {
+                return "UNKNOWN";
             }
 
         }

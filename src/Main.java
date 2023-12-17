@@ -5,7 +5,8 @@ public class Main {
         Player player1 = new Player("Player 1");
         Player player2 = new Player("Player 2");
         Game game = new Game(player1, player2);
-        Deck deck = new Deck();
+        game.startGame();
+
 
 
     }

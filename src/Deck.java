@@ -9,6 +9,7 @@ class Deck {
 
     public Deck() {
 
+
         cards = new Stack<Card>();
         Suit[] suits = {Suit.HEART, Suit.DIAMOND, Suit.CLUB, Suit.SPADE};
         Rank[] ranks = {Rank.SIX, Rank.SEVEN, Rank.EIGHT, Rank.NINE, Rank.TEN, Rank.JACK, Rank.QUEEN, Rank.KING, Rank.ACE};
@@ -18,6 +19,8 @@ class Deck {
                 cards.add(new Card(suit, rank));
             }
         }
+
+
 
     }
 
@@ -29,9 +32,11 @@ class Deck {
         if (!cards.empty()) {
             return cards.pop();
         }
-        return null;                          //kalashk
+        return null;
 
     }
+
+
 
 
 }
